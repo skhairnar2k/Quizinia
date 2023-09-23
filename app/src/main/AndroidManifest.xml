@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/undraw_questions_re_1fy7"
+        android:roundIcon="@drawable/undraw_questions_re_1fy7"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Quizinia"
+        tools:targetApi="31">
+        <activity
+            android:name=".InstructionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BookmarkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SetsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1373457972994236~6552387982"/>
+
+
+    </application>
+
+</manifest>

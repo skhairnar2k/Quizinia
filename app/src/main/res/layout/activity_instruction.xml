@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".InstructionActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Instructions"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:textColor="#FF0000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="68dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:textSize="22dp"
+            android:padding="8dp"
+            android:gravity="center"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:text=" 1. This quiz is only for practice for individual. \n\n 2. Read the question and option carefully before clicking on answer. \n\n 3. Options can be clicked only once, once clicked cant be changed. \n\n 4. You cannot go back to previous question so read and answer in one shot only. \n\n 5. You can give a quiz as many time you want for practice. \n\n 6. The sets of Quiz questions will update everyday. \n\n 7. As of now this app is only available for Android users but IOS user can use their laptop or desktop for using this app."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-1373457972994236/1480573443"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/next"></com.google.android.gms.ads.AdView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
